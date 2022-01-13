@@ -5,18 +5,93 @@
     <title>약후캐쳐-with CSS </title>
     <meta charset="utf-8">
     <style>
+        table, th, td {
+  border:1px solid pink;
+}
+        table {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30%;
+            font-size: 30px;
+        }
+        td {
+            text-align: center;
+            font-size: 20px;
+        }
+        th {
+            font-size: 25px;
+        }
+        div.a {
+            text-align: center;
+        }
+        div.b {
+            text-align: right;
+        }
        a {
-           color: rgb(255, 136, 0);
+           color: coral;
+           text-decoration: none;
        } 
+       h1 {
+           font-weight: bolder;
+  color: #fff;
+  font-size: 80px;
+  margin-top: 0%;
+  margin-bottom: 3%;
+       }
+       li {
+           font-size: 30px;
+       }
+       p {
+           font-size: 20px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
     </style>
 </head>
 <body>
-    <h1><a href="what.html">약후캐쳐</font></a></h1>
-    <ol>
+    
+    <div class="a">
+    <h1><a href="index.html">약후캐쳐</font></a></h1></div>
+    <div class="a">
+        <table>
+    <tr>
+        <th>제목</th>
+        <th>삭제여부</th>
+        <th>생존기간</th>
+        <th>사이트</th>
+    </tr>
+    <tr>
+        <td><a href="https://www.dogdrip.net/376768221">ㅇㅎ)공부에 집중이 잘 안되네...</a></td>
+        <td>살아있음</td>
+        <td>1hour ago</td>
+        <td><a href="https://www.dogdrip.net">Dogdrip.net</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.dogdrip.net/dogdrip/375754315?_filter=search&search_target=title_content&search_keyword=%E3%85%87%E3%85%8E%29&page=2">ㅇㅎ)신비한 광물의 세계.jpg</a></td>
+        <td>살아있음</td>
+        <td>4Days ago</td>
+        <td><a href="https://www.dogdrip.net">Dogdrip.net</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.dogdrip.net/dogdrip/374846023?_filter=search&search_target=title_content&search_keyword=%E3%85%87%E3%85%8E%29&page=3">ㅇㅎ)는 글쓸 때 제발 ㅇㅎ)좀 붙여라</a></td>
+        <td>살아있음</td>
+        <td>8Days ago</td>
+        <td><a href="https://www.dogdrip.net">Dogdrip.net</a></td>
+    </tr>
+
+</table>
+</div>
+    <!--
+        
+    <ol>    
         <li><a href="1.html">ㅇㅎ)</a></li>
-        <li><a href="2.html">ㅎㅂ)</a></li>
+        <li><a href="2.html" style="color:purple;text-decoration: underline;">ㅎㅂ)</a></li>
         <li><a href="3.html">19)</a></li>
+    
     </ol>
+    
+    -->
+
     <!--
     <ol>
         <li><a href="1.html"><font color="red">ㅇㅎ)</font></a></li>
@@ -26,10 +101,18 @@
 
 -->
 
-        <p><a href="index.html" target="_blank" title="YAKHOO TEST">
-        약후캐쳐</a>는 제가 쓰고 싶어서 만든 사이트 입니다.<br>
-        <h3><strong>사라지는 것에 대한 아쉬움... 그것은 ㅇㅎ)</strong></h3>
+        <p><div class="a">
+            <h3 style="font-size: 20px;"><strong>사라지는 것에 대한 아쉬움... 그것은 ㅇㅎ)</strong></h3>
+
+            (약후캐쳐 Update)<br>
+                2022-01-10 <a href="index.html" target="_blank" title="YAKHOO TEST">약후캐쳐</a>는 제가 쓰고 싶어서 만든 사이트 입니다.
         <br>
+        2022-01-11 HTML 제작, CSS 살짝 적용 (폰트 등)
+        <br>
+        2022-01-12 CSS 여러가지 적용 (색깔, table 등)
+        <br>
+        2022-01-13 table에 실제 사이트 입력, 생존기간 몇시간, 몇일인지 자동으로 크롤링 되었으면
+    </div>
        </p>
 
        <p>
