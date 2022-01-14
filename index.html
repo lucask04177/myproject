@@ -2,9 +2,17 @@
 <html>
     <head>
         
-    <title>약후캐쳐-with CSS </title>
+    <title>ㅇㅎ)탐색기</title>
     <meta charset="utf-8">
     <style>
+
+        #active {
+            color: black
+        }
+        .link {
+            color: darkorange;
+            font-size: 20px;
+        }
         table, th, td {
   border:1px solid pink;
 }
@@ -13,32 +21,26 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30%;
-            font-size: 30px;
         }
         td {
             text-align: center;
             font-size: 20px;
         }
         th {
-            font-size: 25px;
+            font-size: 15px;
         }
-        div.a {
+        .titles {
             text-align: center;
+            font-size: 50px;
         }
-        div.b {
-            text-align: right;
+        .paragraph {
+            text-align: center;
+            font-size: 15px;
         }
        a {
            color: coral;
            text-decoration: none;
        } 
-       h1 {
-           font-weight: bolder;
-  color: #fff;
-  font-size: 80px;
-  margin-top: 0%;
-  margin-bottom: 3%;
-       }
        li {
            font-size: 30px;
        }
@@ -50,61 +52,40 @@
 </head>
 <body>
     
-    <div class="a">
-    <h1><a href="index.html">약후캐쳐</font></a></h1></div>
-    <div class="a">
+    <h1 style="text-align: center" ><a href="index.html" style="font-size: 70px" id="active">ㅇㅎ)탐색기</a></h1>
         <table>
     <tr>
         <th>제목</th>
-        <th>삭제여부</th>
         <th>생존기간</th>
         <th>사이트</th>
+        <th>좋아요 / 싫어요</th>
+        <th>Copy</th>
     </tr>
     <tr>
         <td><a href="https://www.dogdrip.net/376768221" target="_blank">ㅇㅎ)공부에 집중이 잘 안되네...</a></td>
-        <td>살아있음</td>
         <td>1hour ago</td>
         <td><a href="https://www.dogdrip.net">Dogdrip.net</a></td>
+        <td>좋아요100/싫어요20</td>
     </tr>
     <tr>
         <td><a href="https://www.dogdrip.net/dogdrip/375754315?_filter=search&search_target=title_content&search_keyword=%E3%85%87%E3%85%8E%29&page=2" target="_blank">ㅇㅎ)신비한 광물의 세계.jpg</a></td>
-        <td>살아있음</td>
         <td>4Days ago</td>
         <td><a href="https://www.dogdrip.net">Dogdrip.net</a></td>
+        <td>좋아요100/싫어요20</td>
     </tr>
     <tr>
         <td><a href="https://www.dogdrip.net/dogdrip/374846023?_filter=search&search_target=title_content&search_keyword=%E3%85%87%E3%85%8E%29&page=3" target="_blank">ㅇㅎ)는 글쓸 때 제발 ㅇㅎ)좀 붙여라</a></td>
-        <td>살아있음</td>
         <td>8Days ago</td>
         <td><a href="https://www.dogdrip.net">Dogdrip.net</a></td>
+        <td>좋아요100/싫어요20</td>
     </tr>
 
 </table>
 </div>
-    <!--
-        
-    <ol>    
-        <li><a href="1.html">ㅇㅎ)</a></li>
-        <li><a href="2.html" style="color:purple;text-decoration: underline;">ㅎㅂ)</a></li>
-        <li><a href="3.html">19)</a></li>
     
-    </ol>
-    
-    -->
-
-    <!--
-    <ol>
-        <li><a href="1.html"><font color="red">ㅇㅎ)</font></a></li>
-        <li><a href="2.html"><font color="red">ㅎㅂ)</font></a></li>
-        <li><a href="3.html"><font color="red">19)</font></a></li>
-    </ol>
-
--->
-
-        <p><div class="a">
-            <h3 style="font-size: 20px;"><strong>사라지는 것에 대한 아쉬움... 그것은 ㅇㅎ)</strong></h3>
-
-            (약후캐쳐 Update)<br>
+        <p class="paragraph">
+            <h3 style="text-align: center" style="font-size: 20px;"><strong>사라지는 것에 대한 아쉬움... 그것은 ㅇㅎ)</strong></h3>
+            <strong>약후캐치 Update</strong><br>
                 2022-01-10 <a href="index.html" target="_blank" title="YAKHOO TEST">약후캐쳐</a>는 제가 쓰고 싶어서 만든 사이트 입니다.
         <br>
         2022-01-11 HTML 제작, CSS 살짝 적용 (폰트 등)
@@ -112,7 +93,9 @@
         2022-01-12 CSS 여러가지 적용 (색깔, table 등)
         <br>
         2022-01-13 table에 실제 사이트 입력, 생존기간 몇시간, 몇일인지 자동으로 크롤링 되었으면
-    </div>
+        <br>
+        2022-01-14 업데이트 부분 가운데 정렬 안됨, class / id / tag 의 차이점 id는 한 문서당 한번만, 클래스는 좀더 포괄적으로
+        ,링크 복사 img 넣어보기
        </p>
 
        <p>
