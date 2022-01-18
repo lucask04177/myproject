@@ -53,27 +53,45 @@
             text-decoration: none;
         } 
         li {
-            font-size: 15px;
+            font-size: 20px;
         }
-        ol {
+        #grid ol {
             border-right: 1px solid gray;
             width: 100px;
             margin: 0% ;
-            padding: 20px;
+            padding: 30px;
+            padding-left: 48px;
         }
         p {
-            font-size: 20px;
+            font-size: 15px;
+            padding: 15px;
+            margin: 0%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article {
+            padding-left: 30px;
         }
     </style>
 </head>
 <body>
     <h1><a href="index2.html">ㅇㅎ)캐치 2.0</a></h1>
-    <ol>
-        <li>ㅇㅎ)</li>
-        <li>ㅎㅂ)</li>
-        <li>ㅎㅂㅈㅇ)</li>
-    </ol>
+    <div id="grid">
+        <ol>
+            <li><a href="index.html">ㅇㅎ)</a></li>
+            <li><a href="index.html">ㅎㅂ)</a></li>
+            <li><a href="index.html">ㅆㄸ)</a></li>
+        </ol>
+        <div id="article">
+            <p>
+                하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루하이루루루루
+            </p>
+        </div>
+    </div>
+    <!--
     <table>
         <tr>
             <th>제목</th>
@@ -101,10 +119,10 @@
             <td>좋아요100/싫어요20</td>
         </tr>
     </table>
-    
+    -->
     <div class="paragraph">
         <h3 style="text-align: center" style="font-size: 20px;"><strong>사라지는 것에 대한 아쉬움... 그것은 ㅇㅎ)</strong></h3>
-        <br><strong>*약후캐치 Update*</strong>
+        <strong>*약후캐치 Update*</strong>
         <br>2022-01-10 <a href="index.html" target="_blank" title="YAKHOO TEST">약후캐쳐</a>는 제가 쓰고 싶어서 만든 사이트 입니다.
         <br>2022-01-11 HTML 제작, CSS 살짝 적용 (폰트 등)
         <br>2022-01-12 CSS 여러가지 적용 (색깔, table 등)
@@ -114,6 +132,7 @@
         <br>2022-01-16 Cascading Style Sheet - css, Cascading = 흐르는
         <br>2022-01-16 CSS <a href="box.html" target="_blank">box model</a>,block-화면 전체를 사용 <-> inline-자기 부피만큼만 사용
         <br>2022-01-17 Boxmodel border 값 주기, 개발자 모드로 마진값 많이 줄이고 패딩값 주기 등등 ol 은 화면 전체를 이용하는 block element
+        <br>2022-01-18 <a href="caniuse.com" target="_blank">caniuse.com</a> "style -> #grid ol" ol 태그 자체가 어떤 특정한 스타일을 가지면 그 밑에 모든 ol 태그가 그 스타일에 종속되기 때문에 가능하면 id 값을 지정 후 스타일을 달아주는데 그게 #아이디값 ol 이런 식
     </div>
 </body>
 </html>
