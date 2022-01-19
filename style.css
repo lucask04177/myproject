@@ -1,0 +1,89 @@
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid gray;
+            color: black;
+            margin: 0;
+            padding:20px;
+
+        }
+        body {
+            margin: 0;
+        }
+        }
+        .link {
+            color: darkorange;
+            font-size: 20px;
+        }
+        table, th, td {
+            border:1px solid pink;
+        }
+        table {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30%;
+            margin-top: 10px;
+        }
+        td {
+            text-align: center;
+            font-size: 10px;
+        }
+        th {
+            font-size: 12px;
+        }
+        .titles {
+            text-align: center;
+            font-size: 50px;
+        }
+        .paragraph {
+            text-align: center;
+            font-size: 15px;
+        }
+        a {
+            color: orange;
+            text-decoration: none;
+        } 
+        li {
+            font-size: 20px;
+        }
+        ol {
+            border-right: 1px solid gray;
+        }
+        #grid ol {
+            width: 100px;
+            margin: 0% ;
+            padding: 30px;
+            padding-left: 48px;
+        }
+        p {
+            font-size: 15px;
+            padding: 15px;
+            margin: 0%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article {
+            padding-left: 30px;
+        }
+        @media(max-width: 800px) {
+            #grid {
+            display: block;
+        }
+            ol{
+                border-right:none;
+            }
+            h1 {
+            text-align: left;
+            border-bottom: none;
+        }
+            .paragraph {
+            text-align: left;
+            }
+            #article {
+                text-align: left;
+                padding-left: 0px;
+            }
+        }
