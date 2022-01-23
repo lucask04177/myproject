@@ -1,8 +1,5 @@
-        .background {
-            background-color: grey;
-        }
+       
         .block {
-            background-color: white;
             width: 960px;
             margin: auto;
         }
@@ -28,7 +25,6 @@
         body {
             margin: 0;
             padding-top: 20px;
-        }
         }
         .link {
             color: darkorange;
@@ -62,9 +58,8 @@
             margin-right: 20%;
         }
         a {
-            color: orange;
-            text-decoration: none;
-        } 
+            color:black;
+        }
         li {
             font-size: 20px;
             display: inline;
