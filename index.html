@@ -19,10 +19,12 @@
         if(document.querySelector('#night_day').value === 'night'){
             document.querySelector('body').style.backgroundColor = 'black';
             document.querySelector('body').style.color = 'white';
+            document.querySelectorAll('a').style.color = 'white';
             document.querySelector('#night_day').value = 'day';
         } else {
             document.querySelector('body').style.backgroundColor = 'white';
             document.querySelector('body').style.color = 'black';
+            document.querySelectorAll('a').style.color = 'black';
             document.querySelector('#night_day').value = 'night';
         }
     ">
@@ -30,10 +32,12 @@
         if(document.querySelector('#돔황챠_괜찮아').value === '돔황챠') {
             document.querySelector('body').style.backgroundColor = 'black';
             document.querySelector('body').style.color = 'black';
+            document.querySelectorAll('a').style.color = 'black';
             document.querySelector('#돔황챠_괜찮아').value = '괜찮아';
         } else {
             document.querySelector('body').style.backgroundColor = 'black';
             document.querySelector('body').style.color = 'white';
+            document.querySelectorAll('a').style.color = 'orange';
             document.querySelector('#돔황챠_괜찮아').value = '돔황챠';
         }
         ">
