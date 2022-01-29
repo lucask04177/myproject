@@ -15,19 +15,21 @@
     </ul>
     <div class="block">
     <h1><a href="index.html">마이프로젝트</a></h1>
-    <input id="night_day" type="button" value="night" onclick="
-        if(document.querySelector('#night_day').value === 'night'){
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'white';
-            document.querySelector('#night_day').value = 'day';
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body')
+        if(this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
         } else {
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black';
-            document.querySelector('#night_day').value = 'night';
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
         }
     ">
+    <!--
     <input id="돔황챠_괜찮아" type="button" value="돔황챠" onclick="
-        if(document.querySelector('#돔황챠_괜찮아').value === '돔황챠') {
+        if(this.value === '돔황챠') {
             document.querySelector('body').style.backgroundColor = 'black';
             document.querySelector('body').style.color = 'black';
             document.querySelector('#돔황챠_괜찮아').value = '괜찮아';
@@ -37,6 +39,7 @@
             document.querySelector('#돔황챠_괜찮아').value = '돔황챠';
         }
         ">
+        -->
         <table>
         <tr>
             <th>제목</th>
@@ -79,6 +82,7 @@
         <br>2022-01-18 <a href="caniuse.com" target="_blank">caniuse.com</a> "style -> #grid ol" ol 태그 자체가 어떤 특정한 스타일을 가지면 그 밑에 모든 ol 태그가 그 스타일에 종속되기 때문에 가능하면 id 값을 지정 후 스타일을 달아주는데 그게 #아이디값 ol 이런 식
         <br>2022-01-19 media query -> 중간에 오타 나서 잘 안됨. 태그 조정을 잘 해두자, link rel = relationship, style.css 를 미리 다운받아 두면 cashing 효과, css 파일을 미리 다운받아 두면 데이터가 덜 나감 한번 받아두면 계속 사용하게 되니까
         <br>2022-01-25 JS 토글 버튼, True & False = Boolean 
+        <br>2022-01-29 Refactoring "var target = ~~~"
     </div>
 </div>
 </body>
