@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>김대리의 소잡는 팡샨</title>
+</head>
+<body>
+    
+    <h1>Function</h1>
+    오늘은 김대리의 소잡는 팡샨을 알아볼거에오~
+    원래대로 돌아가려면 <a href="index.html">이곳 (약후캐쳐)</a> 으로 돌아가세여~ 
+    <h2>Basic</h2>
+    <ul>
+        <script>
+            function two(){
+                document.write('<li>1</li>');
+                document.write('<li>1-1</li>');    
+            }
+           two();
+            document.write('<li>1</li>');
+            document.write('<li>1</li>');
+           two();
+            document.write('<li>1</li>');
+
+        </script>
+    </ul>
+    <h2>Parameter (매개변수) & Argument (인자)</h2>
+        <script>
+            function onePlusone(){
+                document.write(1+1+'<br>');
+            }
+            onePlusone();
+            function sum(left, right){
+                document.write(left+right+'<br>');
+            }
+            sum(3,5); // 8
+            sum(5,5);
+        </script>
+
+
+<h3>팡샨 쓸 때 주의점이 있소...</h3>
+<xmp>
+    <script> 
+        function onePlusone(){
+            document.write(1+1+'<br>' <- 여기에 '<br>' 에서 '' 안넣어주면 작동 안함);
+        }
+        onePlusone();
+        function sum(left, right){
+            document.write(left+right+'<br>');
+        }
+        sum(3,5); // 8
+        sum(5,5);
+    </script>
+</xmp>
+
+<h2>Return...</h2>
+</body>
+</html>

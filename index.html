@@ -4,6 +4,60 @@
         
     <title>my project</title>
     <meta charset="utf-8">
+    <script>
+        function nightDayHandler(self){
+            var target = document.querySelector('body')
+                if(self.value === 'night'){
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'white';
+                    self.value = 'day';
+                    
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'powderblue';
+                        i = i + 1;
+                    }
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'night';
+
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'orange';
+                        i = i + 1;
+                    }
+                }
+            }
+        function RunOkHandler(self){
+                    var target = document.querySelector('body')
+                if(self.value === 'Run') {
+                    target.style.backgroundColor = 'black';
+                    target.style.color = 'black';
+                    self.value = 'OK';
+
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                } else {
+                    target.style.backgroundColor = 'white';
+                    target.style.color = 'black';
+                    self.value = 'Run';
+
+                    var alist = document.querySelectorAll('a');
+                    var i = 0;
+                    while(i < alist.length){
+                        alist[i].style.color = 'orange';
+                        i = i + 1;
+                    }
+                }
+            }
+    </script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -16,30 +70,13 @@
     <div class="block">
     <h1><a href="index.html">마이프로젝트</a></h1>
     <input type="button" value="night" onclick="
-        var target = document.querySelector('body')
-        if(this.value === 'night'){
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';
-            this.value = 'day';
-        } else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            this.value = 'night';
-        }
+    nightDayHandler(this);
     ">
-    <!--
-    <input id="돔황챠_괜찮아" type="button" value="돔황챠" onclick="
-        if(this.value === '돔황챠') {
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'black';
-            document.querySelector('#돔황챠_괜찮아').value = '괜찮아';
-        } else {
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'white';
-            document.querySelector('#돔황챠_괜찮아').value = '돔황챠';
-        }
-        ">
-        -->
+    
+    <input id="RunawayHandler" type="button" value="Run" onclick="
+    RunOkHandler(this);
+    ">
+        
         <table>
         <tr>
             <th>제목</th>
@@ -83,6 +120,8 @@
         <br>2022-01-19 media query -> 중간에 오타 나서 잘 안됨. 태그 조정을 잘 해두자, link rel = relationship, style.css 를 미리 다운받아 두면 cashing 효과, css 파일을 미리 다운받아 두면 데이터가 덜 나감 한번 받아두면 계속 사용하게 되니까
         <br>2022-01-25 JS 토글 버튼, True & False = Boolean 
         <br>2022-01-29 Refactoring "var target = ~~~"
+        <br>2022-02-02 Run모드 적용~
+        <br>2022-02-02 <a href="function.html" style="font-size: 20px" style="font-weight: bolder">김대리의 소잡는 팡샨(함수)</a>
     </div>
 </div>
 </body>
